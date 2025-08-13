@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, useCallback } from 'react';
 
-const API_URL = ''; // Make API calls to the same server that serves the app
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'; // Make API calls to the same server that serves the app
 
 // --- Helper Functions ---
 const formatDuration = (isoString) => {
